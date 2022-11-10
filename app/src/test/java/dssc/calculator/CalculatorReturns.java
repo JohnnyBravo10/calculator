@@ -27,24 +27,24 @@ class CalculatorReturns {
     @Test
     void sum_of_two_number() {
         Calculator calculator = new Calculator();
-        assertEquals(10.1, calculator.compute("6","+","4.1"), 0.000001);
+        assertEquals(10.1, calculator.compute("6+4.1"), 0.000001);
     }
 
     @Test
     void difference_of_two_number() {
         Calculator calculator = new Calculator();
-        assertEquals(100.6, calculator.compute("104.6","-","4"), 0.000001);
+        assertEquals(100.6, calculator.compute("104.6-4"), 0.000001);
     }
 
     @Test
     void product_of_two_numbers() {
         Calculator calculator = new Calculator();
-        assertEquals(76.5, calculator.compute("8.5","*","9"), 0.000001);
+        assertEquals(76.5, calculator.compute("8.5*9"), 0.000001);
     }
 
     @Test
     void quotient_of_two_numbers() {
         Calculator calculator = new Calculator();
-        assertEquals(1.8, calculator.compute("3.6","/","2"), 0.000001);
+        assertEquals(1.8, calculator.compute("3.6/2"), 0.000001);
     }
 }
